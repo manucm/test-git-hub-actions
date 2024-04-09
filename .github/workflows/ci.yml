@@ -16,7 +16,6 @@ jobs:
                   JOB_CONTEXT: ${{ toJson(job) }}
               run: |
                   echo "Job Context: $JOB_CONTEXT"
-                  echo "valor del primere secret : ${{ PASS_ONE }}"
-                  echo "Valor de la primera variable: ${{ VAR_ONE }}"
+                  echo "valor del primere secret : ${{ secrets.PASS_ONE }}"
                   echo Done
               
