@@ -14,9 +14,11 @@ jobs:
             - name: More and Moree
               env: 
                   JOB_CONTEXT: ${{ toJson(job) }}
+                  GIT_HUB_CONTEXT: ${{ toJson(github) }}
               run: |
                   echo "Job Context: $JOB_CONTEXT"
                   echo "valor del primere secret : ${{ secrets.PASS_ONE }}"
-                  echo "valo de la primera variable: ${{ github.VAR_ONE }}"
+                  echo "valor de la primera variable: ${{ github.VAR_ONE }}"
+                  echo "valor de la primera variable github: $GIT_HUB_CONTEXT"
                   echo Done
               
