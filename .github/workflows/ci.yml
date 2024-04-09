@@ -17,4 +17,5 @@ jobs:
               run: |
                   echo "Job Context: $JOB_CONTEXT"
                   echo "Done"
+                  echo $PASS_ONE
               
