@@ -17,5 +17,6 @@ jobs:
               run: |
                   echo "Job Context: $JOB_CONTEXT"
                   echo "valor del primere secret : ${{ secrets.PASS_ONE }}"
+                  echo "valo de la primera variable: ${{ secrets.VAR_ONE }}"
                   echo Done
               
