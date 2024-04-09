@@ -14,7 +14,7 @@ jobs:
             - name: More and Moree
               env: 
                   JOB_CONTEXT: ${{ toJson(job) }}
-                  GIT_HUB_ENV: ${{ toJson(GITHUB_ENV) }}
+                  GIT_HUB_ENV: ${{ toJson(vars) }}
                   SECRETS_ENV: ${{ toJson(secrets) }}
               run: |
                   echo "Job Context: $JOB_CONTEXT"
